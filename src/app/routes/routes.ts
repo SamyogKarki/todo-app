@@ -7,6 +7,7 @@ import { login } from "../pages/user/login.example.ts";
 import { logout } from "../pages/user/logout.example.ts";
 import { register } from "../pages/user/register.example.ts";
 import { classlistAll } from "../pages/classroom/classroomall.index.ts";
+import { TodoApp } from "../pages/todo/wrapper.todo";
 
 type RouteParams = {
   /**
@@ -76,7 +77,14 @@ const routes: RouteParams[] = [
     path: "/404",
     linkLabel: "404",
     content: noPageFoundIndex,
-  }
+  },
+
+  {
+    path: "/todo",
+    linkLabel: "Todo",
+    content: TodoApp,
+    isAuthenticated: true
+  },
 ];
 
 export default routes;

@@ -1,0 +1,129 @@
+.todo-wrapper {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.todo-heading {
+    font-size: 28px;
+    color: #6b21a8;
+    margin-bottom: 20px;
+}
+
+.todo-subheading {
+    font-size: 20px;
+    color: #6b21a8;
+    margin: 30px 0 10px;
+}
+
+.todo-form-container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.todo-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.todo-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.todo-input {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.todo-input:focus {
+    border-color: #6b21a8;
+}
+
+.todo-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.todo-btn:hover { opacity: 0.85; }
+
+.todo-btn-primary {
+    background: #6b21a8;
+    color: white;
+    align-self: flex-start;
+}
+
+.todo-btn-edit {
+    background: #f59e0b;
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.todo-btn-delete {
+    background: #ef4444;
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.todo-list-container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.todo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.todo-table th {
+    background: #6b21a8;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.todo-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-table tr:hover { background: #f9f9f9; }
+
+.todo-status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.todo-status-pending { background: #fef3c7; color: #92400e; }
+.todo-status-in-progress { background: #dbeafe; color: #1e40af; }
+.todo-status-completed { background: #d1fae5; color: #065f46; }
+
+.todo-empty {
+    text-align: center;
+    color: #999;
+    padding: 30px;
+}
