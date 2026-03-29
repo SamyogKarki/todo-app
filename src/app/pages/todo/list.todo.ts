@@ -52,9 +52,12 @@ export class ListTodo extends StatefulWidget {
 
                         delBtn.onclick = () => {
                             if (id) {
-                                DeleteConceptById(id).then(() => {
-                                    console.log("Task deleted");
-                                });
+                                let confirmed = confirm("Are you sure you want to delete this task?");
+                                if (confirmed) {
+                                    DeleteConceptById(id).then(() => {
+                                        console.log("Task deleted");
+                                    });
+                                }
                             }
                         };
 
