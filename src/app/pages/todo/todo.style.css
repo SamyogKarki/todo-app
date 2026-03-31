@@ -127,3 +127,47 @@
     color: #999;
     padding: 30px;
 }
+
+.todo-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.todo-tab {
+    padding: 8px 16px;
+    border: 2px solid #6b21a8;
+    border-radius: 20px;
+    background: white;
+    color: #6b21a8;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.todo-tab:hover {
+    background: #f3e8ff;
+}
+
+.todo-tab-active {
+    background: #6b21a8;
+    color: white;
+}
+
+.todo-count {
+    background: rgba(0,0,0,0.15);
+    color: inherit;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.todo-count-pending { background: #fef3c7; color: #92400e; }
+.todo-count-progress { background: #dbeafe; color: #1e40af; }
+.todo-count-completed { background: #d1fae5; color: #065f46; }
